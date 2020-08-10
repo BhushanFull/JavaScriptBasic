@@ -19,5 +19,7 @@ test('Array functions',()=>{
 
     expect(myObject.findIndexOfElement(age,3)).toBe(3);
 
+    expect(myObject.findElementByIndex(age,7)).toBe(555)
+
     expect(myObject.serchElementIsPresent(age,9)).toBeTruthy();
 })

@@ -44,6 +44,9 @@ class ArrayManipulations{
      findIndexOfElement(age,value){
         return age.indexOf(value);
     }
+    findElementByIndex(age,index){
+        return age[index];
+    }
 
      serchElementIsPresent(age,value){
         return age.includes(value);
