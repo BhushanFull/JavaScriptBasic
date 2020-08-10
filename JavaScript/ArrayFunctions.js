@@ -1,6 +1,8 @@
  var age = [23,25,1,78,10,44,51,45,20,30,4,34,56,78,2,455,77,88,1000,123231,213];
 
 class ArrayManipulations{
+
+    //Time complexity 0(1)
     addElement(age,value){
         var startTime = new Date().getTime();
         age.push(value);
@@ -9,6 +11,7 @@ class ArrayManipulations{
         return age;
     };
 
+    //Time complexity 0(1)
      removeElement(age){
         var startTime = new Date().getTime();
         age.pop();
@@ -17,6 +20,7 @@ class ArrayManipulations{
         return age;
     }
 
+    //Time complexity 0(n)
      reverseArray(age){
         var startTime = new Date().getTime();
         age.reverse();
@@ -24,6 +28,8 @@ class ArrayManipulations{
         console.log("total time for reverse : ",endTime-startTime);
         return age;
     }
+
+    //Time complexity 0(nlogn) 
      sortArray(age){
         var startTime = new Date().getTime();
         age.sort(function(a,b){return a-b;});
@@ -36,27 +42,34 @@ class ArrayManipulations{
     //     return age.length;
     // }
 
+    //Time complexity 0(n)
      findMaxInElement(age){
         return Math.max(...age);
         
     }
 
+    //Time complexity 0(1)
      findIndexOfElement(age,value){
         return age.indexOf(value);
     }
+
+    //Time complexity 0(1)
     findElementByIndex(age,index){
         return age[index];
     }
 
+    //Time complexity 0(n)
      serchElementIsPresent(age,value){
         return age.includes(value);
     }
 
+    //Time complexity 0(n)
     removeAtSpecificIndex(age,index){
         age.splice(index,1);
         return age;
     }
 
+    //Time complexity 0(n)
     addAtSpecificIndex(age,index,value){
         age.splice(index,0,value);
         return age;
