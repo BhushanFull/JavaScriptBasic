@@ -1,4 +1,4 @@
-// var age = [23,25,1,78,10,44,51,45,20,30,4,34,56,78,2,455,77,88,1000,123231,213];
+ var age = [23,25,1,78,10,44,51,45,20,30,4,34,56,78,2,455,77,88,1000,123231,213];
 
 class ArrayManipulations{
     addElement(age,value){
@@ -51,9 +51,20 @@ class ArrayManipulations{
      serchElementIsPresent(age,value){
         return age.includes(value);
     }
+
+    removeAtSpecificIndex(age,index){
+        age.splice(index,1);
+        return age;
+    }
+
+    addAtSpecificIndex(age,index,value){
+        age.splice(index,0,value);
+        return age;
+    }
 }
 
 module.exports = ArrayManipulations;
+
 
 // console.log(age.reduce(function(a,b){
 //     return Math.max(a,b);

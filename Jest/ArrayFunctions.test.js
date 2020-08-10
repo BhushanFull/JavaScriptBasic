@@ -22,4 +22,8 @@ test('Array functions',()=>{
     expect(myObject.findElementByIndex(age,7)).toBe(555)
 
     expect(myObject.serchElementIsPresent(age,9)).toBeTruthy();
+
+    expect(myObject.removeAtSpecificIndex(age,1)).not.toContain(45);
+
+    expect(myObject.addAtSpecificIndex(age,0,1000)).toContain(1000);
 })
