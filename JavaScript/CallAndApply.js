@@ -1,6 +1,6 @@
 function state(){
     console.log('state is call....',this.name)
-    return this.name;
+    return this.name
 }
 
 function city(){
@@ -26,6 +26,7 @@ class  Country{
 }
 
 var india = new Country('jharkhand','Ranchi',834005);
+// india.getName();
 module.exports = Country;
 console.log(india.getName());
 

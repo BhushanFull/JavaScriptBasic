@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var foo = 'foo';
+                var myObject = {foo: 'I am myObject.foo'};
+                var sayFoo = function() {
+                console.log(this['foo'],foo);
+                };
+
+                myObject.sayFoo = sayFoo;
+                myObject.sayFoo(); 
+                console.dir(sayFoo)
+                sayFoo();
+        </script>
+    </body>
+</html>
