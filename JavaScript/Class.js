@@ -21,3 +21,4 @@ class College extends Person{
 }
 const college1 = new College('bhushan',23,'male','NIT Raipur');
 console.log(college1);
+console.log(perseon1)
