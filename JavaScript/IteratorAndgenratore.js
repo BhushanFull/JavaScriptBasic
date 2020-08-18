@@ -12,12 +12,17 @@ function *genrater(){
     yield 'Jai';
     yield 'Sandep';
     yield 'Chandra';
+   
 }
 
 var it = genrater();
 
 var re = it.next();
+
+module.exports.genrater = genrater;
+
 while(re.done == false){
     console.log(re);
     re = it.next();
 }
+
