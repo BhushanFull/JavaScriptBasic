@@ -24,6 +24,6 @@ function func2(){
     // func3().catch(a=>console.log(a));
    
 }
-// console.log(func2());
+console.log(func2());
 module.exports = func1;
 

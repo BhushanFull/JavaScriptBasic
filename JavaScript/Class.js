@@ -18,6 +18,9 @@ class College extends Person{
         super(name,age,gender);
         this.collegeName = collegeName;
     }
+    getName(){
+        return super.getName();
+    }
 }
 const college1 = new College('bhushan',23,'male','NIT Raipur');
 console.log(college1);

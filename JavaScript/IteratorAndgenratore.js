@@ -3,7 +3,7 @@ let itrator = myArray[Symbol.iterator]();
 
 var result = itrator.next();
 while(result.done === false){
-    console.log(result);
+    // console.log(result);
     result = itrator.next();
 }
 
@@ -18,11 +18,9 @@ function *genrater(){
 var it = genrater();
 
 var re = it.next();
-
 module.exports.genrater = genrater;
-
 while(re.done == false){
-    console.log(re);
+    // console.log(re);
     re = it.next();
 }
 
