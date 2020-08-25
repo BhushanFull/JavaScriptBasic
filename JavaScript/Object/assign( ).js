@@ -30,3 +30,16 @@ console.log(nepal == india)
 nepal.area = 25000;
 console.log(nepal)
 console.log(india)
+
+const srilanka = Object.assign({},india);
+srilanka.population = 1300000
+
+console.log(india)
+console.log(srilanka)
+
+srilanka.continent = 'Asia';
+
+const china = Object.assign(srilanka,nepal)
+
+console.log('combind',china)
+
